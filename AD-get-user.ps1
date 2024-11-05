@@ -1,0 +1,2 @@
+﻿#AD-get-user
+Get-ADUser -Filter * -SearchBase "OU=Research,OU=Users,DC=ad,DC=contoso,DC=com" -Properties * | Select-Object name, userprincipalname, @{name="ProxyAddresses";expression={$_.ProxyAddresses -join ";"}} | export-csv -path c:\temp\userexport.csv
