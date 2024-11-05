@@ -1,0 +1,1 @@
+iwr https://raw.githubusercontent.com/nakotw/My-scripts/main/msoffice-removal-tool.ps1 -OutFile msoffice-removal-tool.ps1; powershell -ExecutionPolicy Bypass .\msoffice-removal-tool.ps1
